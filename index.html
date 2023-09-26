@@ -2,38 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Form</title>
+    <title>simple form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <form action="" id="form">
-            <h2>Registration form</h2>
-            <div class="input-control">
+        <div class="header">
+            <h2>Registration</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="inputs">
                 <label for="username">Username</label>
-                <input type="text" id="username" name="username">
+                <input type="text" placeholder="Name" id="username">                
                 <div class="error"></div>
             </div>
-            <div class="input-control">
+
+
+            <div class="inputs">
                 <label for="email">Email</label>
-                <input type="text" id="email" name="email">
+                <input type="email" placeholder="example@gmail.com" id="email">
                 <div class="error"></div>
             </div>
-            <div class="input-control">
+
+
+            <div class="inputs">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password">
+                <input type="password" placeholder="Password" id="password">
                 <div class="error"></div>
             </div>
-            <div class="input-control">
-                <label for="password">Confirm Password</label>
-                <input type="password" id="password2" name="password2">
+
+
+            <div class="inputs">
+                <label for="password2">Confirm Password</label>
+                <input type="password" placeholder="Password" id="password2">
                 <div class="error"></div>
             </div>
-            <button type="button">Sign Up</button>
+
+            <button type="submit">Submit</button>
         </form>
     </div>
+    
+<script src="script.js"></script>
 
-    <script src="script.js"></script>
 </body>
 </html>
